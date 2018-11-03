@@ -8,7 +8,7 @@
 
 #include "list_hash.h"
 
-
+//
 
 
 void list_hash_ini(list_hash_arr array)//哈希表初始化
