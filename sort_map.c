@@ -82,7 +82,7 @@ void sort_map_creat(sort_map_pmap g)                                //创建顺�
     int v1,v2;
     printf("请输入顺序图的点数与边数:\n");
     scanf("%d %d",&g->num_spot,&g->num_edge);
-    printf("请输入各个点的名称(单个字符):\n");
+    printf("请输入各个点的名称(单个数字):\n");
     for(i=0;i<g->num_spot;i++)
     {
         scanf("%d",&g->name[i]);

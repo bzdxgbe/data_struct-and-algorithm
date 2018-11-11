@@ -200,7 +200,7 @@ int sort_tree_leaf(sort_tree_pnode root)//根节点结算
 void sort_tree_special_print(sort_tree_pnode root,int key,int dec)//特例节点信息打印
 {
     char *s;
-    if(root!=NULL)
+    if(root)
     {
         if(dec==0)
             printf("%3d is root\n",root->data);

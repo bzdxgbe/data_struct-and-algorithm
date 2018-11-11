@@ -733,7 +733,7 @@ int main()
                     {
                         case 1:
                         {
-                            printf("请输入相应字符及其出现次数(5组)：\n");
+                            printf("请输入相应字符及其出现次数(5组:a 5)：\n");
                             for(i=1;i<=N;i++)
                             {
                                 scanf("%c %d",&c[i],&w[i]);
@@ -818,7 +818,7 @@ int main()
                             
                         case 2:
                         {
-                            printf("请输入插入的数值:\n");
+                            printf("请输入插入的数值(单个数据):\n");
                             scanf("%d",&num);
                             sort_tree_insert(&sort_tree_root,num);
                             sort_tree_print(sort_tree_root);
@@ -827,7 +827,7 @@ int main()
                             
                         case 3:
                         {
-                            printf("请输入要搜索的数值:\n");
+                            printf("请输入要搜索的数值(单个数据):\n");
                             scanf("%d",&num);
                             if(sort_tree_search(sort_tree_root,num)==NULL)
                                 printf("not exist!\n");
@@ -859,7 +859,7 @@ int main()
                             
                         case 7:
                         {
-                            printf("请输入要删除的节点值:\n");
+                            printf("请输入要删除的节点值(单个数据):\n");
                             scanf("%d",&num);
                             sort_tree_del(&sort_tree_root,num);
                             sort_tree_print(sort_tree_root);
@@ -904,7 +904,7 @@ int main()
                     {
                         case 1:
                         {
-                            printf("请输入一组数据:\n");
+                            printf("请输入一组数据(0截止):\n");
                             scanf("%d",&data);
                             while(data!=0)
                             {
@@ -917,7 +917,7 @@ int main()
                             
                         case 2:
                         {
-                            printf("请输入插入的数值:\n");
+                            printf("请输入插入的数值(单个数据):\n");
                             scanf("%d",&data);
                             avl_tree_root=avl_tree_insert(avl_tree_root,data);
                             avl_tree_print(avl_tree_root);
@@ -926,7 +926,7 @@ int main()
                             
                         case 3:
                         {
-                            printf("请输入删除的数值:\n");
+                            printf("请输入删除的数值(单个数据):\n");
                             scanf("%d",&data);
                             avl_tree_root=avl_tree_del(avl_tree_root,data);
                             avl_tree_print(avl_tree_root);
@@ -941,7 +941,7 @@ int main()
                             
                         case 5:
                         {
-                            printf("请输入要搜索的数值:\n");
+                            printf("请输入要搜索的数值(单个数据):\n");
                             scanf("%d",&data);
                             if(avl_tree_search(avl_tree_root,data)!=NULL)
                                 printf("exist\n");
@@ -1007,7 +1007,7 @@ int main()
                             int sort_map_pre[sort_map_len];
                             int sort_map_dis[sort_map_len];
                             int v;
-                            printf("请输入起始点:\n");
+                            printf("请输入起始点(单个起点):\n");
                             scanf("%d",&v);
                             sort_map_dijkstra(g, v, sort_map_pre, sort_map_dis);
                         }break;
@@ -1021,7 +1021,7 @@ int main()
                         case 7:
                         {
                             int v;
-                            printf("最小生成树起点:\n");
+                            printf("最小生成树起点(单个起点):\n");
                             scanf("%d",&v);
                             sort_map_primm(g,v);
                         }break;
@@ -1554,7 +1554,7 @@ int main()
 
                         case 2:
                         {
-                            printf("请输入删除的数据:\n");
+                            printf("请输入删除的数据(单个数据):\n");
                             scanf("%d",&num);
                             if(!rb_tree_search(root,num))
                                 printf("无法删除数据!\n");
@@ -1567,7 +1567,7 @@ int main()
 
                         case 3:
                         {
-                            printf("请输入搜索的数据:\n");
+                            printf("请输入搜索的数据(单个数据):\n");
                             scanf("%d",&num);
                             if(!rb_tree_search(root,num))
                                 printf("数据不存在!\n");
